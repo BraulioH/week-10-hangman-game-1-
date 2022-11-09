@@ -3,21 +3,36 @@
 # The outputs of a certain function can become inputs of other
 # functions. That way, the program is built from the interaction
 # between functions that perform a defined task .
-# def function_1():
-# |...
-# |return a
-# def function_2(a):
-# |...
-# |return b
-# def function_3(b):
-# |...
-# |return c
-# def function_4(a,c):
-# |...
-# |return d
 
-def interactions():
-  pass
+
+
+# from random import shuffle
+from random import shuffle
+#initial list
+
+
+# mixing sticks
+def mix_sticks(my_list):
+  shuffle(my_list)
+  return my_list
+
+#choose number
+def try_your_luck():
+  a_try = " "
+  while a_try not in ["1","2","3","4","5"]:
+    a_try = input("choose a number")
+  return int(a_try)
+
+#verify number
+def verify_number(list, a_try):
+  if list[a_try-1] == "-":
+    print("wash the dishes")
+  else:
+    print("this time you are safe")
+  print(f"you got {list[a_try-1]}")
+
+
+
 
 #####################################################################################################
 

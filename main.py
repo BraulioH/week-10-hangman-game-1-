@@ -1,10 +1,10 @@
 # from methods_help import method_help
 # from functions import function, welcome, add_numbers, num_dividedFrom_add_numbers, greet, welcome
 # from returnStuff import power
-from dynamic_functions import check_3Digits
-from dynamic_functions import positiveList
+# from dynamic_functions import check_3Digits
+# from dynamic_functions import positiveList
 from dynamic_functions import sum_less
-
+from function_interactions import mix_sticks
 # method_help()
 # function()
 # #yogurt = welcome("Yogurt")
@@ -19,5 +19,8 @@ from dynamic_functions import sum_less
 # print(results)
 # positive_list = positiveList([1, 6, 99, -22, -500, 223])
 # print(positive_list)
-result = sum_less(22, 456)
-print(result)
+# result = sum_less(22, 456)
+# print(result)
+sticks = ["-","--","---","----","-----"]
+my_mix = mix_sticks(sticks)
+print(my_mix)
